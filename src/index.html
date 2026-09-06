@@ -65,8 +65,11 @@
         </div>
         <div>
           <button id="loginButton" class="btn btn-outline-light"
-            style=" height: 35px; width: 70px; text-align: center; border-radius: 6px; border-width: 2px; border-color:rgb(251, 251, 251);  font-weight: bold; font-size: 1.25rem; margin-right: 10px;">Login</button>
-          <a class="btn btn-outline-light btn-lg "
+            style=" height: 35px; width: 70px; text-align: center; border-radius: 6px; border-width: 2px; border-color:rgb(251, 251, 251);  font-weight: bold; font-size: 1.25rem; margin-right: 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Login</button>
+          <a href="Addfood.html" id="loginButton" class="btn btn-outline-light"
+            style=" height: 35px; width: 70px; text-align: center; border-radius: 6px; border-width: 2px; border-color:rgb(251, 251, 251);  font-weight: bold; font-size: 1.25rem; margin-right: 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Add
+            Item</a>
+          <a href="cart.html" class="btn btn-outline-light btn-lg "
             style=" height: 35px; width: 70px; text-align: center; border-radius: 6px; border-width: 2px; border-color:rgb(251, 251, 251);  font-weight: bold; font-size: 1.25rem; margin-right: 10px;">CART</a>
         </div>
       </div>
@@ -85,9 +88,14 @@
     <!-- PETS LOAD HERE -->
   </div>
 
+
+  <div id="foodsRow" class="row">
+    <!-- PETS LOAD HERE -->
+  </div>
+
   <div id="foodTemplate" style="display: none;">
     <div class="col-sm-4 col-md-4 col-lg-4">
-      <div class="panel panel-default panel-pet">
+      <div class="panel panel-default panel-food">
         <div class="panel-heading">
           <h3 class="panel-title">Scrappy</h3>
         </div>
@@ -98,7 +106,7 @@
           <strong>Item Name</strong>: <span class="food-name">Example</span><br />
           <strong>Price</strong>: <span class="food-price">100</span><br />
           <br /><br />
-          <button class="btn btn-default btn-order" type="button" data-id="0">Add to Cart</button>
+          <button class="btn btn-default btn-add" type="button" data-id="0">Add to Cart</button>
         </div>
       </div>
     </div>
